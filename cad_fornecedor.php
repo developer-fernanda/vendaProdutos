@@ -21,8 +21,9 @@
             <div class="col-md-5" style="background-color: #9370DB; color:white;">
                 <br><br><br><br><br><br><br>
                 <div style="position: fixed;" class="ml-3 pl-3 text-center">
-                    <h3> <i class="fas fa-highlighter"></i> Olá, seja bem vindo!</h3>
-                    <h1> Cadastro de Fornecedor</h1>
+                    <h3> Olá, seja bem vindo!</h3>
+                    <h1> Cadastro de Fornecedor</h1><br>
+                    <i class="fas fa-people-carry" style="font-size: 100px;"></i><br><br>
                     <button type="button" class="btn btn-outline-light mt-4" value="Voltar" onclick="javascript: location.href='index.php';" style="border-radius: 25px;">Voltar</button>
                 </div>
                 <!--redireciona para a tela indicada-->
@@ -81,11 +82,6 @@
                             <input type="text" class="form-control" name="txtinscricao_estadual" id="exampleInputInscricaoEstadual" aria-describedby="inscricao_estadual" placeholder="Inscrição Estadual">
                         </div>
                         <br>
-                        <!-- <div class="col-md-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">Isento</label>
-                        </div>-->
                         <div class="col-md-6">
                             <label for="exampleInputInscricaoMunicipal">Inscrição Municipal</label>
                             <input type="text" class="form-control" name="txtinscricao_municipal" id="exampleInputInscricaoMunicipal" aria-describedby="inscricao_municipal" placeholder="Inscrição Municipal">
@@ -188,7 +184,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-12 mb-3">
                             <label for="exampleInputNome">Observação</label>
-                            <textarea name="txtobs" cols="30" rows="3" class="form-control" placeholder="Digite uma observação"></textarea>
+                            <textarea name="txtobservacoes" cols="30" rows="3" class="form-control" placeholder="Digite uma observação"></textarea>
                         </div>
                     </div>
                     <div class="text-center">
@@ -202,7 +198,7 @@
         </div>
 
     </div>
-
+    <?php include("footer.php") ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

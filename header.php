@@ -18,12 +18,12 @@
                         </a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="index.php" style="color: white;">
+                        <a class="nav-link" href="sobre.php" style="color: white;">
                             Sobre
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" style="cursor: pointer" aria-haspopup="true" aria-expanded="false">
                             Cadastro
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
@@ -35,7 +35,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" role="button" style="cursor: pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Consultas
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
@@ -46,7 +46,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" role="button" style="cursor: pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Relatórios
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">

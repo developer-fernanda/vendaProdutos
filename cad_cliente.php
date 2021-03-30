@@ -21,8 +21,9 @@
             <div class="col-md-5 text-center" style="background-color: #58AF9C; color:white">
                 <br><br><br><br><br><br><br>
                 <div style="position: fixed;" class="ml-3 pl-5 text-center">
-                    <h3> <i class="fas fa-highlighter"></i> Olá, seja bem vindo!</h3>
-                    <h1> Cadastro de Cliente</h1>
+                    <h3> Olá, seja bem vindo!</h3>
+                    <h1> Cadastro de Cliente</h1> <br>
+                    <i class="fas fa-user-friends" style="font-size: 100px;"></i><br><br>
                     <button type="button" class="btn btn-outline-light mt-4" value="Voltar" onclick="javascript: location.href='index.php';" style="border-radius: 25px;">Voltar</button>
                     <!--redireciona para a tela indicada-->
                 </div>
@@ -47,18 +48,18 @@
 
                             <label for="combo">Sexo</label>
                             <select class="form-control" name="txtsexo" id="combo">
-                                <option value="Administrador">Feminino</option>
-                                <option value="Usuario">Maculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Maculino">Maculino</option>
                             </select>
                         </div>
                         <div class="form-group col-md-3">
 
                             <label for="combo">Estado Civil</label>
                             <select class="form-control" name="txtestado_civil" id="combo">
-                                <option value="Administrador">Solteiro</option>
-                                <option value="Usuario">Casado</option>
-                                <option value="Usuario">Divorciado</option>
-                                <option value="Usuario">Viuvo</option>
+                                <option value="Solteiro">Solteiro</option>
+                                <option value="Casado">Casado</option>
+                                <option value="Divorciado">Divorciado</option>
+                                <option value="Viuvo">Viuvo</option>
                             </select>
                         </div>
                         <div class="form-group col-md-6">
@@ -104,32 +105,32 @@
 
                             <label for="uf">Estado</label>
                             <select class="form-control" name="txtuf">
-                                <option value="Acre">AC</option>
-                                <option value="Alagoas">AL</option>
-                                <option value="Amapa">AP</option>
-                                <option value="Amazonas">AM</option>
-                                <option value="Bahia">BA</option>
-                                <option value="Ceara">CE</option>
-                                <option value="EspíritoSanto">ES</option>
-                                <option value="Goiás">GO</option>
-                                <option value="Maranhão">MA</option>
-                                <option value="Mato Grosso">MT</option>
-                                <option value="Mato Grosso do Sul">MS </option>
-                                <option value="Minas Gerais">MG</option>
-                                <option value="Pará">PA</option>
-                                <option value="Paraíba">PB</option>
-                                <option value="Paraná">PR</option>
-                                <option value="Pernambuco">PE</option>
-                                <option value="Piauí">PI</option>
-                                <option value="Rio de Janeiro">RJ</option>
-                                <option value="Rio Grande do Norte">RN</option>
-                                <option value="Rio Grande do Sul">RS</option>
-                                <option value="Rondônia">RO</option>
-                                <option value="Roraima">RR</option>
-                                <option value="Santa Catarina">SC</option>
-                                <option value="São Paulo">SP</option>
-                                <option value="Sergipe">SE</option>
-                                <option value="Tocantins">TO</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS </option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RG">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
                             </select>
                         </div>
                     </div>
@@ -144,10 +145,6 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <!-- <div class="form-group col-md-4">
-                            <label for="exampleInputData_Cadastro"> Data de Cadastro </label>
-                            <input type="date" class="form-control " name="txtdata_cadastro" id="exampleInputData_Cadastro" aria-describedby="data_cadastro">
-                        </div> -->
                         <div class="form-group col-md-12">
                             <label for="exampleInputNome">Observação</label>
                             <textarea name="txtobs" cols="30" rows="3" class="form-control" placeholder="Observação"></textarea>
@@ -163,7 +160,8 @@
         </div>
 
     </div>
-   
+
+    <?php include("footer.php") ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">

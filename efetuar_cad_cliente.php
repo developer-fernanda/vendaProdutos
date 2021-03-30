@@ -16,34 +16,21 @@ $rua = $_POST['txtrua'];
 $numero = $_POST['txtnumero'];
 $bairro = $_POST['txtbairro'];
 $uf = $_POST['txtuf'];
-$CEP = $_POST['txtcep'];
+$cep = $_POST['txtcep'];
 $complemento = $_POST['txtcomplemento'];
-$observacoes = $_POST['txtobs'];
+$obs = $_POST['txtobs'];
 
 //essa variavél recebe o comando de inserção
 $sqlinsert = "insert into cliente values (0, '$nome', '$data_nascimento', '$sexo', '$estado_civil', '$profissao',
- '$telefone', '$email', '$cpf','$rg', '$rua', '$numero', '$bairro', '$uf','$CEP', '$complemento', now(), '$observacoes')";
+ '$telefone', '$email', '$cpf','$rg', '$rua', '$numero', '$bairro', '$uf','$cep', '$complemento', now(), '$obs')";
 
 //executando instrução no SQL
 //@mysqli_query é um comando que exige dois parametros (conecta ao banco / insere, deleta, consulta e atualiza a informação)
 $resultado = @mysqli_query($conexao, $sqlinsert);
 
-
-if (!$resultado) {
-  //Esse comando só é executado quando não é possivel inserir a informação no banco   
-  die('Query Inválido: ' . @mysqli_error($conexao));
-} else {
-  echo "Parabéns! Registro Cadastrado com Sucesso";
-}
-mysqli_close($conexao); //Fecha a conexão com o banco
-
 ?>
 <!--Fecha o arquivo php, pois está sendo utilizado outras instruções-->
 
-<br><br>
-
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -52,14 +39,43 @@ mysqli_close($conexao); //Fecha a conexão com o banco
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
 </head>
 
 <body>
+  <?php include("header.php") ?>
 
-  <button type="submit" class="btn mx-2" style="background-color: #58AF9C; color:white; border-radius: 25px;" onclick="window.location='cad_cliente.php';" value="Cadastro">Voltar para Cadastro</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center" style="margin-top: 100px">
 
-  <button type="submit" class="btn" style="background-color: #58AF9C; color:white; border-radius: 25px;" onclick="window.location='lista_cliente.php';" value="consulta">Consultar Cadastrado Realizado</button>
+        <?php
+
+        if (!$resultado) {
+          //Esse comando só é executado quando não é possivel inserir a informação no banco   
+          die('Query Inválido: ' . @mysqli_error($conexao));
+        } else {
+          include("header.php");
+          echo '<div class="alert alert-success" role="alert">
+                    <div class="p-5">
+                      <i class="fas fa-grin-hearts h1"> </i> 
+                      <p> Parabéns! Registro Cadastrado com Sucesso.</p>
+                    </div>
+                  </div>
+
+              <a href="cad_cliente.php" class="btn mx-4 mt-5" style="background-color: #58AF9C; color:white; border-radius: 25px;">Criar novo Cadastro</a>
+              <a href="lista_cliente.php" class="btn mt-5" style="background-color: #58AF9C; color:white; border-radius: 25px;">Ver Cadastros</a>';
+        }
+        mysqli_close($conexao); //Fecha a conexão com o banco
+        ?>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 

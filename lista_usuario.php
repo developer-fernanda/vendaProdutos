@@ -31,8 +31,8 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
 <body>
     <?php include("header.php") ?>
     <div class="container-fluid">
-        <div class="row mt-5">
-            <div class="col-md-12">
+        <div class="row m-5">
+            <div class="col-md-12 mt-4">
 
                 <!--Inicio dos botões-->
                 <form method="get" action="lista_usuario.php">
@@ -77,10 +77,10 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                                 <td> <?php echo $dado['senha']; ?> </td>
                                 <td> <?php echo $dado['perfil']; ?> </td>
                                 <td>
-                                    <a href="editar.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-alterar mx-2" style="background-color: #6495ED; color:white; border-radius: 30px;" role="button">
+                                    <a href="ver_cad_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-alterar mx-2" style="background-color: #6495ED; color:white; border-radius: 30px;" role="button">
                                         <i class="fas fa-pencil-alt"></i> Alterar </a>
 
-                                    <a href="editar.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-outline-danger btn-excluir" style="border-radius: 30px;" role="button">
+                                    <a href="excluir_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-danger btn-excluir" style="border-radius: 30px;" role="button">
                                         <i class="far fa-trash-alt"></i> Excluir </a>
                                 </td>
                             </tr>
@@ -93,7 +93,7 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
         </div>
     </div>
 
-
+    <?php include("footer.php") ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
