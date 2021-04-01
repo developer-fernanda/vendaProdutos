@@ -7,24 +7,24 @@
             <div class="container d-flex justify-content-between">
                 <ul class="navbar-nav d-none d-lg-block" style="color: white;">
                     <li class="nav-item mt-2">
-                        NANDA
+                       FERNANDA INGRID
                     </li>
                 </ul>
                 <ul class="navbar-nav" id="navegacao">
 
                     <li class="nav-item px-2">
                         <a class="nav-link" href="index.php" style="color: white;">
-                            <i class="fas fa-home"></i> Home
+                            <i class="fas fa-home"></i> HOME
                         </a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="sobre.php" style="color: white;">
-                            Sobre
+                            SOBRE
                         </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" style="cursor: pointer" aria-haspopup="true" aria-expanded="false">
-                            Cadastro
+                            CADASTRO
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
                             <a class="dropdown-item" href="cad_usuario.php">Usuário</a>
@@ -36,7 +36,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" style="cursor: pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Consultas
+                            CONSULTA
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
                             <a class="dropdown-item" href="lista_usuario.php">Usuário</a>
@@ -47,7 +47,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" style="cursor: pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Relatórios
+                            RELATÓRIO
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
                             <a class="dropdown-item" href="#">Usuário</a>

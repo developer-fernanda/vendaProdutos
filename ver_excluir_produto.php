@@ -45,7 +45,7 @@
             <div class="col-md-5" style="background-color: #EE82EE; color:white">
                 <br><br><br><br><br><br><br>
                 <div style="position: fixed;" class="ml-3 pl-5 text-center">
-                    <h1> Alteração de Cadastro</h1>
+                    <h1> Exclusão de Cadastro</h1>
                     <h1> Produto</h1> <br>
                     <i class="fas fa-dolly" style="font-size: 100px;"></i><br><br>
                     <button type="button" class="btn btn-outline-light mt-4 mr-2" value="Voltar" onclick="javascript: location.href='lista_produto.php';" style="border-radius: 25px;">Voltar</button>
@@ -54,11 +54,11 @@
             </div>
             <!--COLUNA 2-->
             <div class="col-md-7 p-5 ">
-                <h2 class="text-center" style="color: #EE82EE;"> <i class="far fa-copy"></i> Alterar Cadastro </h2>
+                <h2 class="text-center" style="color: #EE82EE;"> <i class="far fa-copy"></i> Excluir Cadastro </h2>
                 <hr class="mb-5">
 
                 <!-- Ele envia os dados para tela de cadastro-->
-                <form method="post" action="alteracao_produto.php">
+                <form method="post" action="excluir_produto.php">
                     <!-- 1° linha-->
                     <div class="form-row mb-3">
                         <div class="form-group col-md-2">
@@ -67,11 +67,11 @@
                         </div>
                         <div class="form-group col-md-5">
                             <label for="xampleInputDescricaoProduto"> Descrição do Produto</label>
-                            <input type="text" class="form-control" name="txtdescricao_produto" value='<?php echo $dado['descricao_produto']; ?>'>
+                            <input type="text" class="form-control" name="txtdescricao_produto" value='<?php echo $dado['descricao_produto']; ?>'readonly>
                         </div>
                         <div class="form-group col-md-5">
                             <label for="exampleInputMarca"> Marca </label>
-                            <input type="text" class="form-control" name="txtmarca" value='<?php echo $dado['marca']; ?>'>
+                            <input type="text" class="form-control" name="txtmarca" value='<?php echo $dado['marca']; ?>'readonly>
                         </div>
                     </div>
 
@@ -79,39 +79,36 @@
                     <div class="form-row mb-3">
                         <div class="form-group col-md-3 mb-3">
                             <label for="quantidade">Quantidade</label>
-                            <input type="text" class="form-control" name="txtquantidade" value='<?php echo $dado['quantidade']; ?>'>
+                            <input type="text" class="form-control" name="txtquantidade" value='<?php echo $dado['quantidade']; ?>'readonly>
                         </div>
 
                         <div class="form-group col-md-3">
                             <label for="exampleInputValor"> Valor </label>
-                            <input type="text" class="form-control" name="txtvalor" value='<?php echo $dado['valor']; ?>'>
+                            <input type="text" class="form-control" name="txtvalor" value='<?php echo $dado['valor']; ?>'readonly>
                         </div>
 
                         <div class="form-group col-md-2">
                             <label for="lote">Lote</label>
-                            <input type="text" class="form-control" name="txtlote" value='<?php echo $dado['lote']; ?>'>
+                            <input type="text" class="form-control" name="txtlote" value='<?php echo $dado['lote']; ?>'readonly>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="exampleInputData_Validade">Data de Validade</label>
-                            <input type="text" class="form-control" name="txtdatavalidade" value='<?php echo $dado['data_validade']; ?>'>
+                            <input type="text" class="form-control" name="txtdatavalidade" value='<?php echo $dado['data_validade']; ?>'readonly>
                         </div>
                     </div>
                     <!--3° Linha-->
                     <div class="form-row mb-3">
                         <div class="col-md-8 ">
                             <label for="exampleInput_barras"> Código de Barras </label>
-                            <input type="text" class="form-control" name="txtcodigo_barras" value='<?php echo $dado['codigo_barras']; ?>'>
+                            <input type="text" class="form-control" name="txtcodigo_barras" value='<?php echo $dado['codigo_barras']; ?>'readonly>
                         </div>
                         <div class="col-md-4 ">
                             <label for="exampleInputFornecedor"> Fornecedor </label>
-                            <input type="text" class="form-control" name="txtfornecedor" value='<?php echo $dado['fornecedor']; ?>'>
+                            <input type="text" class="form-control" name="txtfornecedor" value='<?php echo $dado['fornecedor']; ?>'readonly>
                         </div>
                     </div>
                     <div class="text-center mt-3">
-                        <button type="submit" class="btn m-2 text-center" style="background-color: #EE82EE; color:white; border-radius: 25px;" value="Alterar">Alterar</button>
-                        <button type="reset" class="btn m-2 text-center" style="background-color: #EE82EE; color:white; border-radius: 25px;" value="Limpar">Limpar</button>
-                        <a href="excluir_produto.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-danger btn-excluir m-2" style="border-radius: 30px;" role="button">
-                            <i class="far fa-trash-alt"></i> Excluir </a>
+                    <button type="submit" class="btn btn-danger btn-excluir m-2" style="border-radius: 30px;" role="button"> Concluir </button>
                     </div>
                 </form>
             </div>

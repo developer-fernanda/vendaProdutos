@@ -22,7 +22,7 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Sistema PHP</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
@@ -80,7 +80,7 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                                     <a href="ver_cad_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-alterar mx-2" style="background-color: #6495ED; color:white; border-radius: 30px;" role="button">
                                         <i class="fas fa-pencil-alt"></i> Alterar </a>
 
-                                    <a href="excluir_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-danger btn-excluir" style="border-radius: 30px;" role="button">
+                                    <a href="ver_excluir_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-danger btn-excluir" style="border-radius: 30px;" role="button">
                                         <i class="far fa-trash-alt"></i> Excluir </a>
                                 </td>
                             </tr>

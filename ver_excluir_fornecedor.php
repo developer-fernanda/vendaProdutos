@@ -46,7 +46,7 @@
             <div class="col-md-5" style="background-color: #9370DB; color:white;">
                 <br><br><br><br><br><br><br>
                 <div style="position: fixed;" class="ml-3 pl-3 text-center">
-                    <h1> Alteração de Cadastro</h1>
+                    <h1> Exclusão de Cadastro</h1>
                     <h1> Fornecedor</h1> <br>
                     <i class="fas fa-people-carry" style="font-size: 100px;"></i><br><br>
                     <button type="button" class="btn btn-outline-light mt-4" value="Voltar" onclick="javascript: location.href='lista_fornecedor.php';" style="border-radius: 25px;">Voltar</button>
@@ -56,10 +56,10 @@
 
             <!--2º Coluna-->
             <div class="col-md-7 p-5">
-                <h2 class="text-center" style="color: #9370DB;"> <i class="far fa-copy"></i> Alterar Cadastro </h2>
+                <h2 class="text-center" style="color: #9370DB;"> <i class="far fa-copy"></i> Excluir Cadastro </h2>
                 <hr class="mb-5">
                 <!--Início do Form-->
-                <form method="post" action="alteracao_fornecedor.php">
+                <form method="post" action="excluir_fornecedor.php">
                     <!-- Ele envia os dados para tela de cadastro-->
                     <!-- 1° linha-->
                     <div class="form-row">
@@ -69,28 +69,28 @@
                         </div>
                         <div class="form-group col-md-5">
                             <label for="exampleInputRazao">Razão Social</label>
-                            <input class="form-control" type="text" name="txtRazaoSocial" value='<?php echo $dado['razao_social']; ?>'>
+                            <input class="form-control" type="text" name="txtRazaoSocial" value='<?php echo $dado['razao_social']; ?>'readonly>
                         </div>
                         <div class="form-group col-md-5">
                             <label for="exampleInputCnpj">CNPJ</label>
-                            <input class="form-control" type="text" name="txtCnpj" value='<?php echo $dado['cnpj']; ?>'>
+                            <input class="form-control" type="text" name="txtCnpj" value='<?php echo $dado['cnpj']; ?>'readonly>
                         </div>
                     </div>
                     <!-- 2° linha-->
                     <div class="form-row">
                         <div class="form-group col-md-4 mb-3">
                             <label for="exampleInputData_Abertura">Data de Abertura</label>
-                            <input type="text" class="form-control" name="txtdataabertura" value='<?php echo $dado['data_abertura']; ?>'>
+                            <input type="text" class="form-control" name="txtdataabertura" value='<?php echo $dado['data_abertura']; ?>'readonly>
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="exampleInputRegime">Regime</label>
-                            <input type="text" class="form-control" name="txtregime" value='<?php echo $dado['regime']; ?>'>
+                            <input type="text" class="form-control" name="txtregime" value='<?php echo $dado['regime']; ?>'readonly>
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="exampleInputTipo" class="col-md-3 control-label">Tipo</label>
-                            <input type="text" class="form-control" name="txttipo" value='<?php echo $dado['tipo']; ?>'>
+                            <input type="text" class="form-control" name="txttipo" value='<?php echo $dado['tipo']; ?>'readonly>
                         </div>
 
                     </div>
@@ -98,41 +98,41 @@
                     <div class="form-row">
                         <div class="form-group col-md-6 mb-3">
                             <label for="exampleInputInscricaoEstadual"> Inscrição Estadual</label>
-                            <input type="text" class="form-control" name="txtinscricao_estadual" value='<?php echo $dado['inscricao_estadual']; ?>'>
+                            <input type="text" class="form-control" name="txtinscricao_estadual" value='<?php echo $dado['inscricao_estadual']; ?>'readonly>
                         </div>
                         <br>
                         <div class="form-group col-md-6">
                             <label for="exampleInputInscricaoMunicipal">Inscrição Municipal</label>
-                            <input type="text" class="form-control" name="txtinscricao_municipal" value='<?php echo $dado['inscricao_municipal']; ?>'>
+                            <input type="text" class="form-control" name="txtinscricao_municipal" value='<?php echo $dado['inscricao_municipal']; ?>'readonly>
                         </div>
                     </div>
                     <!-- 4° linha-->
                     <div class="form-group form-row">
                         <div class="form-group col-md-7 mb-3">
                             <label for="representante">Representante</label>
-                            <input type="text" class="form-control" name="txtrepresentante" value='<?php echo $dado['representante']; ?>'>
+                            <input type="text" class="form-control" name="txtrepresentante" value='<?php echo $dado['representante']; ?>'readonly>
                         </div>
                         <div class="form-group col-md-5">
                             <label for="exampleInputTelefone"> Telefone </label>
-                            <input type="text" class="form-control" name="txttelefone" value='<?php echo $dado['telefone']; ?>'>
+                            <input type="text" class="form-control" name="txttelefone" value='<?php echo $dado['telefone']; ?>'readonly>
                         </div>
                     </div>
                     <!-- 5° linha-->
                     <div class="form-row">
                         <div class="form-group col-md-5 mb-3">
                             <label for="exampleInputCelular">Celular</label>
-                            <input type="text" class="form-control" name="txtcelular" value='<?php echo $dado['celular']; ?>'>
+                            <input type="text" class="form-control" name="txtcelular" value='<?php echo $dado['celular']; ?>'readonly>
                         </div>
                         <div class="form-group col-md-7">
                             <label for="exampleInputEmail">E-mail</label>
-                            <input type="email" class="form-control" name="txtemail" value='<?php echo $dado['email']; ?>'>
+                            <input type="email" class="form-control" name="txtemail" value='<?php echo $dado['email']; ?>'readonly>
                         </div>
                     </div>
                     <!-- 6° linha-->
                     <div class="form-row">
                         <div class="form-group col-md-5 mb-3">
                             <label for="exampleInputRua">Rua</label>
-                            <input type="text" class="form-control" name="txtrua" value='<?php echo $dado['rua']; ?>'>
+                            <input type="text" class="form-control" name="txtrua" value='<?php echo $dado['rua']; ?>'readonly>
                         </div>
                         <div class="form-group col-md-2">
                             <label for="exampleInputNumero">Numero</label>
@@ -144,30 +144,30 @@
                         </div>
                         <div class="form-group col-md-2">
                             <label for="uf">Estado</label>
-                            <input tyoe="text" class="form-control" name="txtuf" value='<?php echo $dado['UF']; ?>'>
+                            <input tyoe="text" class="form-control" name="txtuf" value='<?php echo $dado['UF']; ?>'readonly>
                         </div>
                     </div>
                     <!-- 7° linha-->
                     <div class="form-row">
                         <div class="form-group col-md-6 mb-3">
                             <label for="exampleInputCep">CEP</label>
-                            <input type="text" class="form-control" name="txtcep" value='<?php echo $dado['CEP']; ?>'>
+                            <input type="text" class="form-control" name="txtcep" value='<?php echo $dado['CEP']; ?>'readonly>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="exampleInputComplemento">Complemento</label>
-                            <input type="text" class="form-control" name="txtcomplemento" value='<?php echo $dado['complemento']; ?>'>
+                            <input type="text" class="form-control" name="txtcomplemento" value='<?php echo $dado['complemento']; ?>'readonly>
                         </div>
                     </div>
                     <!-- 8º linha -->
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="exampleInputSite">Site</label>
-                            <input type="text" class="form-control" name="txtsite" value='<?php echo $dado['site']; ?>'>
+                            <input type="text" class="form-control" name="txtsite" value='<?php echo $dado['site']; ?>'readonly>
                         </div>
                         <div class="col-md-6">
 
                             <label for="exampleInputEmail_cobranca">E-mail de Cobrança e envio de XML</label>
-                            <input type="email" class="form-control" name="txtemail_cobranca" value='<?php echo $dado['email_cobranca']; ?>'>
+                            <input type="email" class="form-control" name="txtemail_cobranca" value='<?php echo $dado['email_cobranca']; ?>'readonly>
                         </div>
 
                     </div>
@@ -175,16 +175,13 @@
                     <div class="form-row">
                         <div class="form-group col-md-12 mb-3">
                             <label for="exampleInputNome">Observação</label>
-                            <textarea name="txtobservacoes"  cols="30" rows="3" class="form-control" value='<?php echo $dado['observacoes']; ?>'></textarea>
+                            <textarea name="txtobservacoes"  cols="30" rows="3" class="form-control" value='<?php echo $dado['observacoes']; ?>'readonly></textarea>
                         </div>
                     </div>
 
 
                     <div class="text-center mt-3">
-                        <button type="submit" class="btn m-2 text-center" style="background-color:#9370DB; color:white; border-radius: 25px;" value="Alterar">Alterar</button>
-                        <button type="reset" class="btn m-2 text-center" style="background-color:#9370DB; color:white; border-radius: 25px;" value="Limpar">Limpar</button>
-                        <a href="excluir_fornecedor.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-danger btn-excluir m-2" style="border-radius: 30px;" role="button">
-                            <i class="far fa-trash-alt"></i> Excluir </a>
+                    <button type="submit" class="btn btn-danger btn-excluir m-2" style="border-radius: 30px;" role="button"> Concluir </button>
                     </div>
                 </form>
             </div>

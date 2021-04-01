@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alteração de produtos</title>
+    <title>Sistema PHP</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
@@ -18,7 +18,7 @@
                 <?php
                 include_once('conexao.php');
                 //RECUPERAÇÃO
-                $codigo = $_GET['codigo'];
+                $codigo = $_POST['txtid'];
 
                 $sqlDelete = "DELETE FROM fornecedor WHERE id = $codigo";
 
@@ -38,9 +38,7 @@
                 } else {
                     die('Query Inválido: ' . @mysqli_error($conexao));
                 }
-
                 ?>
-
                 <a href="lista_fornecedor.php" class="btn mt-3" style="background-color: #9370DB; color:white; border-radius: 25px;">Voltar para consulta</a>
             </div>
         </div>
