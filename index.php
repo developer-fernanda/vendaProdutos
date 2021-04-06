@@ -1,3 +1,11 @@
+<?php
+
+include("logica-usuario.php");
+
+//VERIFICA SE FOI LOGADO
+verificaUsuario();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

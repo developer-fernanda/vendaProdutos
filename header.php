@@ -57,6 +57,10 @@
 
                         </div>
                     </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="logout.php" style="color: white;">
+                            SAIR
+                        </a>
                 </ul>
                 <ul class="navbar-nav d-none d-lg-block" style="color: white;">
                     <li class="nav-item px-1">

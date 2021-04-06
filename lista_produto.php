@@ -1,12 +1,19 @@
 <?php
 
+include("logica-usuario.php");
+
+//VERIFICA SE FOI LOGADO
+verificaUsuario();
+?>
+<?php
+
 include("conexao.php");
-$consulta = "SELECT * FROM produto";
+$consulta = "SELECT * FROM produto ORDER BY descricao_produto";
 
 //Verifica se o formulário foi submetido
 if (isset($_GET['txtpesquisa'])) {
     $pesquisa = $_GET['txtpesquisa'];
-    $consulta = "SELECT * FROM produto WHERE descricao_produto LIKE '%$pesquisa%' ";
+    $consulta = "SELECT * FROM produto WHERE descricao_produto LIKE '%$pesquisa%' ORDER BY descricao_produto ";
 }
 
 // echo $consulta;

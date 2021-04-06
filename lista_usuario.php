@@ -1,12 +1,19 @@
 <?php
 
+include("logica-usuario.php");
+
+//VERIFICA SE FOI LOGADO
+verificaUsuario();
+?>
+<?php
+
 include("conexao.php");
-$consulta = "SELECT * FROM usuario";
+$consulta = "SELECT * FROM usuario ORDER BY nome";
 
 //Verifica se o formulário foi submetido
 if (isset($_GET['txtpesquisar'])) {
     $pesquisa = $_GET['txtpesquisar'];
-    $consulta = "SELECT * FROM usuario WHERE nome LIKE '%$pesquisa%' ";
+    $consulta = "SELECT * FROM usuario WHERE nome LIKE '%$pesquisa%' ORDER BY nome";
 }
 
 
