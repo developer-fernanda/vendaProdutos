@@ -122,3 +122,28 @@ body {
     height: 50px;
     border-radius: 30px;
 }
+
+.background-usuario {
+    background-image: url('../img/background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /*Ajusta a img do tamanho da tela*/
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw !important;
+    height: 100vh !important;
+}
+
+.filtro-background {
+    position: absolute;
+    padding: 50px;
+    padding-top: 150px;
+    width: 560px;
+    height: 100%;
+    background: rgba(14, 33, 117, 0.6);
+    color: rgb(255, 255, 255);
+}

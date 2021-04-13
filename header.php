@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #4F4F4F; color: white" >
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #1C1C1C; color: white" >
         <button class="navbar-toggler" style="border: 2px solid white; color: white;" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"><i class="fas fa-bars p-1"></i></span>
         </button>

@@ -13,9 +13,9 @@ verificaUsuario();
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema PHP</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-
 
 
 </head>
@@ -25,16 +25,17 @@ verificaUsuario();
 
     <div class="container-fluid">
         <div class="row mt-5">
-            <div class="col-md-5" style="background-color: #6495ED; color:white">
-                <br><br><br><br><br><br><br>
-                <div style="position: fixed;" class="ml-3 pl-5 text-center">
+            <div class="col-md-5 background-usuario">
+                <div class="filtro-background">
+                    <div style="position: fixed;">
                     <h3> Olá, seja bem vindo!</h3>
                     <h1> Cadastro de Usuário</h1> <br>
-                    <i class="fas fa-user-edit" style="font-size: 100px;"></i><br><br>
-                    <button type="button" class="btn btn-outline-light mt-4 mr-2" value="Voltar" onclick="javascript: location.href='index.php';" style="border-radius: 25px;">Voltar</button>
+                    <button type="button" class="btn btn-outline-light mt-4 mr-2" value="Voltar" onclick="javascript: location.href='index.php';" style="border-radius: 25px;">Voltar</button> 
                     <!--redireciona para a tela indicada-->
+                    </div>
                 </div>
             </div>
+
             <div class="col-md-7 p-5">
                 <h2 class="text-center" style="color: #6495ED;"> <i class="far fa-copy"></i> Criar Cadastro </h2>
                 <hr class="mb-5">
@@ -75,7 +76,6 @@ verificaUsuario();
         </div>
 
     </div>
-    <?php include("footer.php") ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
