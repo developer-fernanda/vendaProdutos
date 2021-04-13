@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #1C1C1C; color: white" >
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #1C1C1C; color: white">
         <button class="navbar-toggler" style="border: 2px solid white; color: white;" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"><i class="fas fa-bars p-1"></i></span>
         </button>
@@ -7,7 +7,7 @@
             <div class="container d-flex justify-content-between">
                 <ul class="navbar-nav d-none d-lg-block" style="color: white;">
                     <li class="nav-item mt-2">
-                       FERNANDA INGRID
+                        FERNANDA INGRID
                     </li>
                 </ul>
                 <ul class="navbar-nav" id="navegacao">
@@ -15,11 +15,6 @@
                     <li class="nav-item px-2">
                         <a class="nav-link" href="index.php" style="color: white;">
                             <i class="fas fa-home"></i> HOME
-                        </a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="sobre.php" style="color: white;">
-                            SOBRE
                         </a>
                     </li>
                     <li class="nav-item dropdown">

@@ -74,11 +74,11 @@ verificaUsuario();
                         </div>
                         <div class="form-group col-md-5">
                             <label for="xampleInputDescricaoProduto"> Descrição do Produto</label>
-                            <input type="text" class="form-control" name="txtdescricao_produto" value='<?php echo $dado['descricao_produto']; ?>'readonly>
+                            <input type="text" class="form-control" name="txtdescricao_produto" value='<?php echo $dado['descricao_produto']; ?>' readonly>
                         </div>
                         <div class="form-group col-md-5">
                             <label for="exampleInputMarca"> Marca </label>
-                            <input type="text" class="form-control" name="txtmarca" value='<?php echo $dado['marca']; ?>'readonly>
+                            <input type="text" class="form-control" name="txtmarca" value='<?php echo $dado['marca']; ?>' readonly>
                         </div>
                     </div>
 
@@ -86,42 +86,44 @@ verificaUsuario();
                     <div class="form-row mb-3">
                         <div class="form-group col-md-3 mb-3">
                             <label for="quantidade">Quantidade</label>
-                            <input type="text" class="form-control" name="txtquantidade" value='<?php echo $dado['quantidade']; ?>'readonly>
+                            <input type="text" class="form-control" name="txtquantidade" value='<?php echo $dado['quantidade']; ?>' readonly>
                         </div>
 
                         <div class="form-group col-md-3">
                             <label for="exampleInputValor"> Valor </label>
-                            <input type="text" class="form-control" name="txtvalor" value='<?php echo $dado['valor']; ?>'readonly>
+                            <input type="text" class="form-control" name="txtvalor" value='<?php echo $dado['valor']; ?>' readonly>
                         </div>
 
                         <div class="form-group col-md-2">
                             <label for="lote">Lote</label>
-                            <input type="text" class="form-control" name="txtlote" value='<?php echo $dado['lote']; ?>'readonly>
+                            <input type="text" class="form-control" name="txtlote" value='<?php echo $dado['lote']; ?>' readonly>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="exampleInputData_Validade">Data de Validade</label>
-                            <input type="text" class="form-control" name="txtdatavalidade" value='<?php echo $dado['data_validade']; ?>'readonly>
+                            <input type="text" class="form-control" name="txtdatavalidade" value='<?php echo $dado['data_validade']; ?>' readonly>
                         </div>
                     </div>
                     <!--3° Linha-->
                     <div class="form-row mb-3">
-                        <div class="col-md-8 ">
+                        <div class="col-md-12 ">
                             <label for="exampleInput_barras"> Código de Barras </label>
-                            <input type="text" class="form-control" name="txtcodigo_barras" value='<?php echo $dado['codigo_barras']; ?>'readonly>
+                            <input type="text" class="form-control" name="txtcodigo_barras" value='<?php echo $dado['codigo_barras']; ?>' readonly>
                         </div>
+                    </div>
+                    <div class="form-row mb-3">
+                        <!--4° Linha-->
                         <div class="col-md-4 ">
                             <label for="exampleInputFornecedor"> Fornecedor </label>
-                            <input type="text" class="form-control" name="txtfornecedor" value='<?php echo $dado['fornecedor']; ?>'readonly>
+                            <input type="text" class="form-control" name="txtfornecedor" value='<?php echo $dado['fornecedor']; ?>' readonly>
                         </div>
                     </div>
                     <div class="text-center mt-3">
-                    <button type="submit" class="btn btn-danger btn-excluir m-2" style="border-radius: 30px;" role="button"> Concluir </button>
+                        <button type="submit" class="btn btn-danger btn-excluir m-2" style="border-radius: 30px;" role="button"> Concluir </button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <?php include("footer.php") ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
