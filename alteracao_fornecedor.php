@@ -49,7 +49,7 @@
                 $resultado = @mysqli_query($conexao, $sqlupdate);
                 if (!$resultado) {
                     echo '<input type="button" onclick="window.location' . "'index.php'" . ';" value="voltar"<br><br>';
-                    die('<b>Query Inválida: </b>' . @mysqli_error($conexao));
+                    die('<b> Query Inválida: </b>' . @mysqli_error($conexao));
                 } else {
                     echo '<div class="alert alert-success" role="alert">
                     <div class="p-5">

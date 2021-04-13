@@ -23,7 +23,7 @@
                 $codigo = $_POST['txtid'];
                 $nome = $_POST['txtnome'];
                 $email = $_POST['txtemail'];
-                $senha = $_POST['txtsenha'];
+                $senha = md5($_POST['txtsenha']);
                 $perfil = $_POST['txtperfil'];
 
                 //CRIANDO A LINHA DO UPDATE

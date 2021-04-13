@@ -62,14 +62,13 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                     <!--Fim dos botões-->
                 </form>
                 <!--Inicio da Tabela-->
-                <table class="table table-striped table-hover">
+                <table class="table table-responsive-md table-borderless table-hover">
                     <thead>
-                         <!--ele localiza pela nome da variavél-->
-                        <tr style="background: #6495ED; color:white">
+                        <!--ele localiza pela nome da variavél-->
+                        <tr class="table-dark">
                             <th>CÓDIGO</th>
                             <th>NOME</th>
                             <th>E-MAIL</th>
-                            <th>SENHA</th>
                             <th>PERFIL</th>
                             <th>AÇÃO</th>
                         </tr>
@@ -81,13 +80,12 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                                 <td> <?php echo $dado['id']; ?> </td>
                                 <td> <?php echo $dado['nome']; ?> </td>
                                 <td> <?php echo $dado['email']; ?> </td>
-                                <td> <?php echo $dado['senha']; ?> </td>
                                 <td> <?php echo $dado['perfil']; ?> </td>
                                 <td>
-                                    <a href="ver_cad_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-alterar mx-2" style="background-color: #6495ED; color:white; border-radius: 30px;" role="button">
+                                    <a href="ver_cad_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-alterar m-1" style="background-color: #6495ED; color:white; border-radius: 30px;" role="button">
                                         <i class="fas fa-pencil-alt"></i> Alterar </a>
 
-                                    <a href="ver_excluir_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-danger btn-excluir" style="border-radius: 30px;" role="button">
+                                    <a href="ver_excluir_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-danger m-1 btn-excluir" style="border-radius: 30px;" role="button">
                                         <i class="far fa-trash-alt"></i> Excluir </a>
                                 </td>
                             </tr>

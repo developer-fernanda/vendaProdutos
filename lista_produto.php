@@ -63,9 +63,9 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                 </form>
 
                 <!--Inicio da Tabela-->
-                <table class="table table-striped table-hover">
+                <table class="table table-borderless table-responsive-md table-hover">
                     <thead>
-                        <tr style="background: #EE82EE; color:white">
+                        <tr class="table-dark">
                             <th>CÓDIGO</th>
                             <th>DESCRIÇÃO DO PRODUTO</th>
                             <th>QUANTIDADE</th>
@@ -86,10 +86,10 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                                 <td> <?php echo $dado['valor']; ?> </td>
                                 <td> <?php echo $dado['codigo_barras']; ?> </td>
                                 <td class="d-flex">
-                                    <a href="ver_cad_produto.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-alterar btn-sm mx-2" style="background-color: #EE82EE; color:white;  border-radius: 30px;" role="button">
+                                    <a href="ver_cad_produto.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-alterar btn-sm m-1" style="background-color: #EE82EE; color:white;  border-radius: 30px;" role="button">
                                         <i class="fas fa-pencil-alt"></i> Alterar </a>
 
-                                    <a href="ver_excluir_produto.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-danger btn-sm  btn-excluir" style=" border-radius: 30px;" role="button">
+                                    <a href="ver_excluir_produto.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-danger btn-sm m-1  btn-excluir" style=" border-radius: 30px;" role="button">
                                         <i class="far fa-trash-alt"></i> Excluir </a>
                                 </td>
                             </tr>

@@ -35,7 +35,7 @@ verificaUsuario();
     } else {
         $num = @mysqli_num_rows($resultado);
         if ($num == 0) {
-            echo "<b>Codigo: </b> Não Localizado!!! <br> <br>";
+            echo "<b> Codigo: </b> Não Localizado!!! <br> <br>";
             echo '<input type="button" onclick="window.location=' . "'index.php'" . ';" value="voltar"<br><br>';
             exit;
         } else {
@@ -45,7 +45,6 @@ verificaUsuario();
     mysqli_close($conexao);
     ?>
     <?php include("header.php") ?>
-
 
     <div class="container-fluid">
         <div class="row mt-5">

@@ -18,7 +18,7 @@ include("logica-usuario.php");
 
 <body>
 
-    <div class="container-fluid" id="background">
+    <div class="container-fluid" id="background-login">
 
         <section id="login">
 
@@ -35,7 +35,7 @@ include("logica-usuario.php");
 
                 <div class="align-button">
                     <button class="btn-login" type="submit" value="entrar">Entrar</button>
-                    <button class="btn-login" type="reset" value="limpar">Limpar</button>
+                    <!-- <button class="btn-login" type="reset" value="limpar">Limpar</button> -->
                 </div>
             </form>
 
@@ -45,7 +45,7 @@ include("logica-usuario.php");
 
             if ($_POST) {
                 $usuario = $_POST['usuario'];
-                $senha = $_POST['senha'];
+                $senha = md5($_POST['senha']);
 
                 // 1 PASSO VERIFICAR SE O USUARIO EXISTE
                 if (efetuaLogin($conexao, $usuario, $senha)) {

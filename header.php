@@ -50,10 +50,10 @@
                             RELATÓRIO
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
-                            <a class="dropdown-item" href="#">Usuário</a>
-                            <a class="dropdown-item" href="#">Cliente</a>
-                            <a class="dropdown-item" href="#">Produto</a>
-                            <a class="dropdown-item" href="#">Fornecedor</a>
+                            <a class="dropdown-item" target="_blank" href="relatorio_usuario.php">Usuário</a>
+                            <a class="dropdown-item" target="_blank" href="relatorio_cliente.php">Cliente</a>
+                            <a class="dropdown-item" target="_blank" href="relatorio_produto.php">Produto</a>
+                            <a class="dropdown-item" target="_blank" href="relatorio_fornecedor.php">Fornecedor</a>
 
                         </div>
                     </li>

@@ -5,7 +5,7 @@ include("conexao.php"); //chama o arquivo conexao php
 //recebendo os dados
 $nome = $_POST['txtnome'];
 $email = $_POST['txtemail'];
-$senha = $_POST['txtsenha'];
+$senha = md5($_POST['txtsenha']);
 $perfil = $_POST['txtperfil'];
 
 //essa variavél recebe o comando de inserção

@@ -18,15 +18,14 @@
         <section>
             <div class="row mb-5" id="sobre" style="margin-top: 100px;">
                 <div class="col-md-12 text-center">
-                    <h4> PROGRAMAÇÃO WEB </h4>
+                    <h4> Sistema integrado ao phpMyAdmin </h4>
                     <hr>
-                    <p> Sistema integrado ao phpMyAdmin</p>
                     <p> Composto por três modalidades: cadastro, consultas e relatórios.</p>
                     <p> Dentre os recursos oferecidos, é possivél realizar cadastros, editar e excluir informações.
                     <p>
                 </div>
                 <!--USUÁRIO-->
-                <div class="col-md-3 mt-5">
+                <div class="col-md-3 mt-5  mb-5">
                     <div class="card card-body mx-1 h-100 text-center card-folha shadow p-5" style="background-color: #6495ED; color:white">
                         <i class="fas fa-user-edit" style="font-size: 100px;"></i><br>
                         <h5>USUÁRIO</h5>
@@ -34,27 +33,26 @@
                     </div>
                 </div>
                 <!--CLIENTE-->
-                <div class="col-md-3 mt-5">
+                <div class="col-md-3 mt-5  mb-5">
                     <div class="card card-body  mx-1 h-100 text-center card-folha shadow p-5" style="background-color: #58AF9C; color:white">
                         <i class="fas fa-user-friends" style="font-size: 100px;"></i><br>
                         <h5>CLIENTE</h5>
                     </div>
                 </div>
                 <!--PRODUTO-->
-                <div class="col-md-3 mt-5">
+                <div class="col-md-3 mt-5  mb-5">
                     <div class="card card-body mx-1 h-100 text-center card-folha shadow p-5" style="background-color: #EE82EE; color:white">
                         <i class="fas fa-dolly" style="font-size: 100px;"></i><br>
                         <h5>PRODUTO</h5>
                     </div>
                 </div>
                 <!--FORNECEDOR-->
-                <div class="col-md-3  mt-5">
+                <div class="col-md-3  mt-5  mb-5">
                     <div class="card card-body  mx-1 h-100 text-center card-folha shadow p-5" style="background-color: #9370DB; color:white;">
                         <i class="fas fa-people-carry" style="font-size: 100px;"></i><br>
                         <h5>FORNECEDOR</h5>
                     </div>
                 </div>
-
             </div>
         </section>
     </div>
