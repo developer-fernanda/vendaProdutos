@@ -11,9 +11,10 @@ $lote = $_POST['txtlote'];
 $data_validade = $_POST['txtdatavalidade'];
 $codigo_barras = $_POST['txtcodigo_barras'];
 $fornecedor = $_POST['txtfornecedor'];
+$imagem = $_POST['txtimagem'];
 
 //essa variavél recebe o comando de inserção
-$sqlinsert = "insert into produto values (0, '$descricao_produto', '$marca', '$quantidade', '$valor', '$lote', '$data_validade', '$codigo_barras', '$fornecedor')";
+$sqlinsert = "insert into produto values (0, '$descricao_produto', '$marca', '$quantidade', '$valor', '$lote', '$data_validade', '$codigo_barras', '$fornecedor', '$imagem')";
 
 //executando instrução no SQL
 //@mysqli_query é um comando que exige dois parametros (conecta ao banco / insere, deleta, consulta e atualiza a informação)

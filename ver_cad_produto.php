@@ -112,9 +112,13 @@ verificaUsuario();
                     </div>
                     <!--4° Linha-->
                     <div class="form-row mb-3">
-                        <div class="col-md-4 ">
+                        <div class="col-md-5 ">
                             <label for="exampleInputFornecedor"> Fornecedor </label>
                             <input type="text" class="form-control" name="txtfornecedor" value='<?php echo $dado['fornecedor']; ?>'>
+                        </div>
+                        <div class="col-md-7 mb-3">
+                            <label for="exampleInputImagem"> Imagem </label>
+                            <input type="file" class="form-control" name="txtimagem" value='<?php echo $dado['imagem']; ?>'>
                         </div>
                     </div>
                     <div class="text-center mt-3">

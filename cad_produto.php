@@ -116,7 +116,7 @@ verificaUsuario();
                     </div>
                      <!--4° Linha-->
                     <div class="form-row">
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-5 mb-3">
                             <label for="exampleInputFornecedor"> Fornecedor </label>
                             <select class="form-control" name="txtfornecedor" id="fornecedor">
                                 <option value="1">Atacadão</option>
@@ -125,6 +125,10 @@ verificaUsuario();
                                 <option value="4">Mercado Vargem Grande</option>
                                 <option value="5">Carrefuor</option>
                             </select>
+                        </div>
+                        <div class="col-md-7 mb-3">
+                            <label for="exampleInputImagem"> Imagem </label>
+                            <input type="file" name="txtimagem" id="exampleInputImagem" aria-describedby="imagem">
                         </div>
                     </div>
 

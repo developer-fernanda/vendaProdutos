@@ -68,9 +68,9 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                         <tr style="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0; color: #4F4F4F">
                             <th>CÓDIGO</th>
                             <th>DESCRIÇÃO DO PRODUTO</th>
+                            <th>MARCA</th>
                             <th>QUANTIDADE</th>
-                            <th>VALOR</th>
-                            <th>CÓDIGO DE BARRAS</th>
+                            <th>IMAGEM</th>
                             <th>AÇÃO</th>
                         </tr>
                     </thead>
@@ -78,19 +78,20 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                     <?php while ($dado = $con->fetch_array()) { ?>
                         <!--Organiza os dados em formato de array-->
                         <tbody>
-                            <tr  style="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0; color: #4F4F4F"h>
-                                 <!--ele localiza pela nome da variavél-->
-                                <td> <?php echo $dado['id']; ?> </td> 
+                            <tr style="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0; color: #4F4F4F" h>
+                                <!--ele localiza pela nome da variavél-->
+                                <td> <?php echo $dado['id']; ?> </td>
                                 <td> <?php echo $dado['descricao_produto']; ?> </td>
+                                <td> <?php echo $dado['marca']; ?> </td>
                                 <td> <?php echo $dado['quantidade']; ?> </td>
-                                <td> <?php echo $dado['valor']; ?> </td>
-                                <td> <?php echo $dado['codigo_barras']; ?> </td>
+                                <td> <a> <img src="assets/img/produto/<?php echo $dado['imagem']; ?>" width='50px' heigth='50px'></a> </td>
                                 <td class="d-flex">
                                     <a href="ver_cad_produto.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-alterar btn-sm m-1" style="background-color: #EE82EE; color:white;  border-radius: 30px;" role="button">
                                         <i class="fas fa-pencil-alt"></i> Alterar </a>
 
                                     <a href="ver_excluir_produto.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-danger btn-sm m-1  btn-excluir" style=" border-radius: 30px;" role="button">
                                         <i class="far fa-trash-alt"></i> Excluir </a>
+                                    
                                 </td>
                             </tr>
                         </tbody>
