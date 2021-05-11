@@ -89,10 +89,13 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
 
                                 <td class="d-flex">
                                     <a href="ver_cad_fornecedor.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-alterar btn-sm m-1" style="background-color: #9370DB; color:white;  border-radius: 30px;" role="button">
-                                        <i class="fas fa-pencil-alt"></i> Alterar </a>
+                                        <i class="fas fa-pencil-alt"></i></a>
 
                                     <a href="ver_excluir_fornecedor.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-danger btn-sm m-1  btn-excluir" style=" border-radius: 30px;" role="button">
-                                        <i class="far fa-trash-alt"></i> Excluir </a>
+                                        <i class="far fa-trash-alt"></i> </a>
+
+                                    <a target="_blank" href="relatorio_fornecedor_individual.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-success btn-sm m-1 btn-excluir" style=" border-radius: 30px;" role="button">
+                                        <i class="fas fa-print"></i> </a>
                                 </td>
                             </tr>
                         </tbody>

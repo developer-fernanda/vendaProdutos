@@ -38,6 +38,7 @@
                             <a class="dropdown-item" href="lista_cliente.php">Cliente</a>
                             <a class="dropdown-item" href="lista_produto.php">Produto</a>
                             <a class="dropdown-item" href="lista_fornecedor.php">Fornecedor</a>
+                            <a class="dropdown-item" href="lista_fornecedor.php">Estoque</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -49,7 +50,17 @@
                             <a class="dropdown-item" target="_blank" href="relatorio_cliente.php">Cliente</a>
                             <a class="dropdown-item" target="_blank" href="relatorio_produto.php">Produto</a>
                             <a class="dropdown-item" target="_blank" href="relatorio_fornecedor.php">Fornecedor</a>
-
+                            <a class="dropdown-item" target="_blank" href="relatorio_fornecedor.php">Produto</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" style="cursor: pointer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MOVIMENTAÇÕES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+                            <a class="dropdown-item" href="venda_cab_prod.php">Vendas</a>
+                            <a class="dropdown-item" href="xxxxx">Nota Fiscal</a>
+                            <a class="dropdown-item" href="xxxxx">Saídas</a>
                         </div>
                     </li>
                     <li class="nav-item px-2">

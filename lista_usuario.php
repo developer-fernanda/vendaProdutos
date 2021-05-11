@@ -83,10 +83,13 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                                 <td> <?php echo $dado['perfil']; ?> </td>
                                 <td>
                                     <a href="ver_cad_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-alterar m-1" style="background-color: #6495ED; color:white; border-radius: 30px;" role="button">
-                                        <i class="fas fa-pencil-alt"></i> Alterar </a>
+                                        <i class="fas fa-pencil-alt"></i> </a>
 
                                     <a href="ver_excluir_usuario.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-sm btn-danger m-1 btn-excluir" style="border-radius: 30px;" role="button">
-                                        <i class="far fa-trash-alt"></i> Excluir </a>
+                                        <i class="far fa-trash-alt"></i> </a>
+                                    
+                                    <a target="_blank" href="relatorio_usuario_individual.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-success btn-sm m-1 btn-excluir" style=" border-radius: 30px;" role="button">
+                                        <i class="fas fa-print"></i> </a>
                                 </td>
                             </tr>
                         </tbody>

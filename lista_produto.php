@@ -70,6 +70,7 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                             <th>DESCRIÇÃO DO PRODUTO</th>
                             <th>MARCA</th>
                             <th>QUANTIDADE</th>
+                            <th>DATA DE VALIDADE</th>
                             <th>IMAGEM</th>
                             <th>AÇÃO</th>
                         </tr>
@@ -84,14 +85,17 @@ $con = @mysqli_query($conexao, $consulta) or die($mysql->error);
                                 <td> <?php echo $dado['descricao_produto']; ?> </td>
                                 <td> <?php echo $dado['marca']; ?> </td>
                                 <td> <?php echo $dado['quantidade']; ?> </td>
+                                <td> <?php echo $dado['data_validade']; ?> </td>
                                 <td> <a> <img src="assets/img/produto/<?php echo $dado['imagem']; ?>" width='50px' heigth='50px'></a> </td>
                                 <td class="d-flex">
                                     <a href="ver_cad_produto.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-alterar btn-sm m-1" style="background-color: #EE82EE; color:white;  border-radius: 30px;" role="button">
-                                        <i class="fas fa-pencil-alt"></i> Alterar </a>
+                                        <i class="fas fa-pencil-alt"></i> </a>
 
                                     <a href="ver_excluir_produto.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-danger btn-sm m-1  btn-excluir" style=" border-radius: 30px;" role="button">
-                                        <i class="far fa-trash-alt"></i> Excluir </a>
-                                    
+                                        <i class="far fa-trash-alt"></i> </a>
+
+                                    <a target="_blank" href="relatorio_produto_individual.php?codigo=<?php echo $dado['id']; ?>" class="btn btn-success btn-sm m-1 btn-excluir" style=" border-radius: 30px;" role="button">
+                                        <i class="fas fa-print"></i> </a>
                                 </td>
                             </tr>
                         </tbody>

@@ -28,7 +28,7 @@ verificaUsuario();
             <div class="col-md-5" style="background-color: #6495ED; color:white">
                 <br><br><br><br><br><br><br>
                 <!--1 COLUNA-->
-                <div style="position: fixed;" class="ml-3 pl-5 text-center">
+                <div style="position: fixed;" class="ml-3 sm-12 pl-5 text-center">
                     <h3> Olá, seja bem vindo!</h3>
                     <h1> Cadastro de Usuário</h1> <br>
                     <i class="fas fa-user-edit" style="font-size: 100px;"></i><br><br>
