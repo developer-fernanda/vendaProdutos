@@ -37,7 +37,7 @@ $listacli = listarClientes($conexao);
 
     <div class="container-fluid">
         <div class="row mt-5">
-            <div class="col-md-5" style="background-color: 	#32CD32; color:white">
+            <div class="col-md-5" style="background: linear-gradient(to left, #32CD32, #32CD32, #90EE90); color:white">
                 <br><br><br><br><br><br><br>
                 <div class="text-center">
                     <h3> Olá, seja bem vindo!</h3>

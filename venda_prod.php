@@ -12,8 +12,8 @@ $dado = mysqli_fetch_array($con1);
 
 // criando variável para selecionar os valores da tabela venda 
 $id_cli = $dado['id'];
-$nome_cli = "select vendas.id_cliente, cliente.nome from vendas, cliente where vendas.id =$id_cli and vendas.id_cliente=cliente.id";
-$cliente = @mysqli_query($conexao, $nome_cli) or die($mysqli->error);
+$select_venda = "select vendas.id_cliente, cliente.nome from vendas, cliente where vendas.id =$id_cli and vendas.id_cliente=cliente.id";
+$cliente = @mysqli_query($conexao, $select_venda) or die($mysqli->error);
 $dado_cli = mysqli_fetch_array($cliente);
 
 $consulta = "SELECT * FROM produto";

@@ -25,7 +25,7 @@ verificaUsuario();
 
     <div class="container-fluid">
         <div class="row mt-5">
-            <div class="col-md-5 text-center" style="background-color: #58AF9C; color:white">
+            <div class="col-md-5 text-center" style="background: linear-gradient(to right, #58AF9C, #58AF9C, #2E8B57); color:white">
                 <br><br><br><br><br><br><br>
                 <div style="position: fixed;" class="ml-3 pl-5 text-center">
                     <h3> Olá, seja bem vindo!</h3>

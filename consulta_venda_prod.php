@@ -17,8 +17,8 @@ $con_preco = @mysqli_query($conexao, $preco) or die($mysqli->error);
 $total = mysqli_fetch_array($con_preco);
 
 // selecionado o cliente
-$nome_cli = "select vendas.id_cliente, cliente.nome from vendas, cliente where vendas.id =$id_venda and vendas.id_cliente=cliente.id";
-$cliente = @mysqli_query($conexao, $nome_cli) or die($mysqli->error);
+$select_venda = "select vendas.id_cliente, cliente.nome from vendas, cliente where vendas.id =$id_venda and vendas.id_cliente=cliente.id";
+$cliente = @mysqli_query($conexao, $select_venda) or die($mysqli->error);
 $dado_cli = mysqli_fetch_array($cliente);
 
 ?>
@@ -72,7 +72,7 @@ $dado_cli = mysqli_fetch_array($cliente);
 
                     <div style="margin-top: 30px;">
                         <a href="venda_prod.php" class="btn " role="button" style="background-color :#32CD32; color:white; border-radius: 30px;"> Voltar </a>
-                        <a target="_blank"href="relatorio_venda.php?id_venda=<?php echo $id_cli; ?>" class="btn " role="button" style="background-color :#32CD32; color:white; border-radius: 30px;">
+                        <a target="_blank"href="relatorio_venda.php?id_venda=<?php echo $id_venda; ?>" class="btn " role="button" style="background-color :#32CD32; color:white; border-radius: 30px;">
                         <i class="fas fa-print"></i> Imprimir </a>
                     </div>
 
@@ -96,8 +96,8 @@ $dado_cli = mysqli_fetch_array($cliente);
                             <tr style="border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0; color: #4F4F4F">
                                 <!--ele localiza pela nome da variavél-->
                                 <td><?php echo $dados['descricao_produto']; ?></td>
-                                <td><?php echo $dados['qnt']; ?></td>
                                 <td><?php echo $dados['preco']; ?></td>
+                                <td><?php echo $dados['qnt']; ?></td>  
                                 <td><?php echo number_format($dados['preco'] * $dados['qnt'], 2); ?></td>
                             </tr>
                         </tbody>
