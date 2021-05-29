@@ -59,7 +59,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
                             <a class="dropdown-item" href="venda_cab_prod.php">Vendas</a>
-                            <a class="dropdown-item" href="xxxxx">Nota Fiscal</a>
+                            <a class="dropdown-item" href="venda_cab_entrada.php">Nota Fiscal</a>
                             <a class="dropdown-item" href="xxxxx">Saídas</a>
                         </div>
                     </li>

@@ -20,7 +20,7 @@
                 <div class="col-md-12 text-center">
                     <h4> Sistema integrado ao phpMyAdmin </h4>
                     <hr>
-                    <p> Composto por três modalidades: cadastro, consultas e relatórios.</p>
+                    <p> Sistema de Venda de Produtos.</p>
                     <p> Dentre os recursos oferecidos, é possivél realizar cadastros, editar e excluir informações.
                     <p>
                 </div>
