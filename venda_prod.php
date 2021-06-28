@@ -1,5 +1,4 @@
 <!-- VENDA DE PRODUTOS -->
-
 <?php
 
 include("conexao.php");
@@ -18,7 +17,6 @@ $dado_cli = mysqli_fetch_array($cliente);
 
 $consulta = "SELECT * FROM produto";
 $con = @mysqli_query($conexao, $consulta) or die($mysqli->error);
-
 ?>
 
 

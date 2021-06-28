@@ -9,7 +9,8 @@ include "conexao.php";
 function listarClientes($conexao)
 {
     $listadeclientes = array();
-    $resultado = mysqli_query($conexao, "select * from cliente order by nome");
+    $select = "SELECT * from cliente order by nome";
+    $resultado = mysqli_query($conexao, $select );
 
     // percorrer a lista
     while ($cliente = mysqli_fetch_assoc($resultado)) {

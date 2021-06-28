@@ -33,7 +33,7 @@
                 //CRIANDO A LINHA DO UPDATE
                 $sqlupdate = "update produto set descricao_produto='$descricao_produto', marca='$marca', quantidade='$quantidade', valor='$valor', lote='$lote', data_validade='$data_validade', codigo_barras='$codigo_barras', fornecedor='$fornecedor' where id=$codigo";
 
-                            //EXECUTANDO INSTRUÇÃO
+                //EXECUTANDO INSTRUÇÃO
                 $resultado = @mysqli_query($conexao, $sqlupdate);
                 if (!$resultado) {
                     echo '<input type="button" onclick="window.location' . "'index.php'" . ';" value="voltar"<br><br>';

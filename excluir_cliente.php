@@ -32,7 +32,7 @@
                          <div class="p-5">
                             <i class="far fa-grin-beam-sweat h1"></i>          
                             <p> Registro deletado com sucesso </p>
-                            </div>
+                        </div>
                     </div>';
                     // header ("location: lista_cliente.php");
                 } else {
