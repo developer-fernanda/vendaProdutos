@@ -1,7 +1,7 @@
 <h1> SISTEMA DE VENDAS </h1>
 <ul>
-  <li> PERMISSÃO DE ACESSO </li>
-  <li> LOGIN  DO ADMINISTRADOR </li>
+  <li> PERMISSÃO DE ACESSO; </li>
+  <li> LOGIN  DO ADMINISTRADOR.</li>
 </ul>
 <h3> MODÚLO USUÁRIO </h3>
 <ul>
@@ -9,7 +9,7 @@
   <li> Consulta de usúario; </li>
   <li> Edição de usuário;</li>
   <li> Exclusão de usuário;</li>
-  <li> Relatório de usuário;</li>
+  <li> Relatório de usuário.</li>
 </ul>
 
 <h3> MODÚLO CLIENTE </h3>
@@ -18,7 +18,7 @@
   <li> Consulta de cliente; </li>
   <li> Edição de cliente;</li>
   <li> Exclusão de cliente;</li>
-  <li> Relatório de cliente;</li>
+  <li> Relatório de cliente.</li>
 </ul>
 
 <h3> MODÚLO FORNECEDOR </h3>
@@ -27,7 +27,7 @@
   <li> Consulta de fornecedor; </li>
   <li> Edição de fornecedor;</li>
   <li> Exclusão de fornecedor;</li>
-  <li> Relatório de fornecedor;</li>
+  <li> Relatório de fornecedor.</li>
 </ul>
 
 <h3> MODÚLO PRODUTO </h3>
@@ -36,7 +36,7 @@
   <li> Consulta de produto; </li>
   <li> Edição de produto;</li>
   <li> Exclusão de produto;</li>
-  <li> Relatório de produto;</li>
+  <li> Relatório de produto.</li>
 </ul>
 
 <h3> MODÚLO VENDA </h3>
@@ -54,7 +54,7 @@
 </ul>
 
   
-<h1> FOTOS DO SISTEMA </h1>
+<h3> IMAGENS DO SISTEMA </h3>
 <br>
 <h4> PERMISSÃO DE ACESSO </h4>
 <img src="img-system/1.png">
