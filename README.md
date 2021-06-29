@@ -52,9 +52,8 @@
   <li> Consulta de produto; </li>
   <li> Finalizar entrada. </li>
 </ul>
-
   
-<h3> IMAGENS DO SISTEMA </h3>
+<h1> IMAGENS DO SISTEMA </h1>
 <br>
 <h4> PERMISSÃO DE ACESSO </h4>
 <img src="img-system/1.png">
